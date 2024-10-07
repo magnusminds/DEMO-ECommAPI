@@ -47,13 +47,13 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
 - **Method:** `POST`
 - **Request Body:**
 ```json
-  {
-    "name": "Product Name",
-    "description": "Product Description",
-    "price": 29.99,
-    "category": "Category Name",
-    "stock": 100
-  }
+ { 
+    "createdDate": "2024-10-07T11:24:30.991Z",
+    "productName": "Boke",
+    "description": "MY BIke old 10 years",
+    "price": 1500,
+    "availableQuantity": "1"
+  } 
 ```
 
 #### GET /products
@@ -62,13 +62,16 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
 - **Request URL:** `/products`
 - **Method:** `GET` 
 ```json
+[
   {
-    "name": "Product Name",
-    "description": "Product Description",
-    "price": 29.99,
-    "category": "Category Name",
-    "stock": 100
+    "id": "XXXXXXXXXXXXXX",
+    "createdDate": "2024-10-07T11:24:30.991Z",
+    "productName": "Boke",
+    "description": "MY BIke old 10 years",
+    "price": 1500,
+    "availableQuantity": "1"
   }
+]
 ```
 
 
@@ -79,12 +82,12 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
 - **Method:** `POST`
 - **Request Body:**
 ```json
- {
-  "first_name": "John",
-  "last_name": "Doe",
-  "email": "john.doe@example.com",
-  "password": "securepassword",
-  "role": "customer"
+{
+    "createdDate": "2024-10-07T11:23:37.080Z",
+    "firstName": "John",
+    "lastName": "doe",
+    "email": "john.doe@example.com",
+    "contactNo": "9876543210"
 }
 ```
 
@@ -96,12 +99,12 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
 ```json
  [
   {
-    "id": "67890",
-    "first_name": "John",
-    "last_name": "Doe",
+    "id": "XXXXXXXXXXXX",
+    "createdDate": "2024-10-07T11:23:37.080Z",
+    "firstName": "John",
+    "lastName": "doe",
     "email": "john.doe@example.com",
-    "role": "customer",
-    "created_at": "2024-10-07T12:10:00Z"
+    "contactNo": "9876543210"
   }
 ]
 ```
