@@ -51,7 +51,7 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
     "createdDate": "2024-10-07T11:24:30.991Z",
     "productName": "Boke",
     "description": "MY BIke old 10 years",
-    "price": 1500$,
+    "price": 1500,
     "availableQuantity": "1"
   } 
 ```
@@ -68,7 +68,7 @@ The **ECOMM API** allows you to manage products and users in a MongoDB database.
     "createdDate": "2024-10-07T11:24:30.991Z",
     "productName": "Boke",
     "description": "MY BIke old 10 years",
-    "price": 1500$,
+    "price": 1500,
     "availableQuantity": "1"
   }
 ]
