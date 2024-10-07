@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="userForm" class="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="firstName">
+                            FirstName *
+                        </label>
+                        <input type="text" formControlName="firstName"
+                            class="form-control"
+                            id="firstName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="lastName">
+                            LastName *
+                        </label>
+                        <input type="text" formControlName="lastName"
+                            class="form-control"
+                            id="lastName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">
+                            Email *
+                        </label>
+                        <input type="email" formControlName="email"
+                            class="form-control"
+                            id="email">
+                    </div>
+                </div> 
+                 <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="contactNumber">
+                            Contact Number 
+                        </label>
+                        <input type="contactNumber" formControlName="contactNumber"
+                            class="form-control"
+                            id="contactNumber">
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div *ngIf="userForm.invalid && formInvalid" class="text-danger">
+                        Please enter valid details
+                    </div>
+                    <button type="button" class="btn btn-primary"
+                        (click)="addUser()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

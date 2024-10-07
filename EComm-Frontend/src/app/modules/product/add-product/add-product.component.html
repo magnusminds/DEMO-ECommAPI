@@ -1,0 +1,51 @@
+<div class="card">
+    <div class="card-body">
+        <form [formGroup]="productForm" class="">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="productName">
+                            Product Name *
+                        </label>
+                        <input type="text" formControlName="productName" class="form-control"
+                            id="productName">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="description">
+                            Description *
+                        </label>
+                        <input type="email" formControlName="description" class="form-control"
+                            id="description">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="price">
+                            Price *
+                        </label>
+                        <input type="number" formControlName="price" class="form-control"
+                            id="price">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="availableQuantity">
+                            Availability *
+                        </label>
+                        <input type="text" formControlName="availableQuantity" class="form-control"
+                            id="availableQuantity">
+                    </div>
+                </div>
+                <div class="col-12 mt-4">
+                    <div *ngIf="productForm.invalid && formInvalid" class="text-danger">
+                        Please enter valid details
+                    </div>
+                    <button type="button" class="btn btn-primary"
+                        (click)="addProduct()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

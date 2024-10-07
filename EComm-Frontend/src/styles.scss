@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 50px;
+    font-size: 16px;
+}
+
+button,
+a {
+    cursor: pointer;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn-primary {
+    max-width: 120px;
+    flex: 0 0 120px;
+    background-color: blue;
+    color: #ffffff;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 14px;
+}
+// .card{
+//     background-color: #ffffff;
+//     background-clip: border-box;
+//     border: 1px solid rgba(0,0,0,0.17);
+//     border-radius: 8px;
+// }
+// .card-header{
+//     padding: 10px;
+//     font-size: 20px;
+//     border-bottom: 1px solid #e9ebec;
+//     font-weight: 600;
+// }
+// .card-body {
+//     padding: 10px 16px;
+// }
+.inner-card-body{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.content-info--warpper {
+    flex: 0 0 870px;
+    max-width: 870px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td {
+    padding: 4px;
+}
+
+// .main--form {
+//     display: flex;
+//     gap: 10px;
+//     align-items: center;
+//     .form-group{
+//         display: block;
+//         label{
+//             display: block;
+//         }
+//     }
+//     .form-control {
+//         height: 30px;
+//     }
+//     .btn{
+//         margin-top: 15px;
+//     }
+
+// }
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
