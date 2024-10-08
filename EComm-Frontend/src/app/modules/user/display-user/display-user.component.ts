@@ -39,12 +39,10 @@ export class DisplayUserComponent implements OnInit {
       complete: () => {
       },
       next: (res: any) => {
-        console.log(res);
         this.userList = res;
       },
       error: (err) => {
-        console.log(err);
-
+        console.log(err)
       }
     })
   }

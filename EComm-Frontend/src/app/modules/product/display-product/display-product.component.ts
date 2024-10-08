@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../../service/product/product.service';
-import { ProductInterface } from '../../../models/user/product/product.model';
 import { RoutingUrls } from '../../../constant/routing-url';
 import { Router } from '@angular/router';
+import { ProductInterface } from '../../../models/product/product.model';
 
 @Component({
   selector: 'app-display-product',
@@ -32,11 +32,11 @@ export class DisplayProductComponent implements OnInit {
       complete: () => {
       },
       next: (res: any) => {
-        console.log(res);
+        
         this.productList = res;
       },
       error: (err) => {
-        console.log(err);
+        
 
       }
     })

@@ -4,8 +4,8 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { ProductService } from '../../../service/product/product.service';
 import { Router } from '@angular/router';
 import { RoutingUrls } from '../../../constant/routing-url';
-import { ProductInterface } from '../../../models/user/product/product.model';
 import { CommonModule } from '@angular/common';
+import { ProductInterface } from '../../../models/product/product.model';
 
 @Component({
   selector: 'app-add-product',
@@ -50,10 +50,10 @@ export class AddProductComponent implements OnInit {
           this.router.navigateByUrl(RoutingUrls.PRODUCT);
         },
         next: (res: any) => {
-          console.log(res);
+          
         },
         error: (err) => {
-          console.log(err);
+          
         }
       });
     }

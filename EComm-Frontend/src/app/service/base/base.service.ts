@@ -6,7 +6,6 @@ export abstract class BaseService {
   constructor(protected http: HttpClient) { }
 
   post(url: string, request: any) {
-    console.log(request);
     return this.http.post(this.base + url, request);
   }
 

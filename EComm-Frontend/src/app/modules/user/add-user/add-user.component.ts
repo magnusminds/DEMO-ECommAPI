@@ -1,4 +1,4 @@
-import { Component, inject, OnInit, TemplateRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from '../../../service/user/user.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -60,10 +60,10 @@ export class AddUserComponent implements OnInit {
           },
           next: (res: any) => {
             this._router.navigateByUrl(RoutingUrls.USER);
-            console.log(res);
+            
           },
           error: (err) => {
-            console.log(err);
+            
           }
         })
       }
